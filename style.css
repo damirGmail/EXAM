@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(90deg, #e7ffca, #f45050, #eeb31e);
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #080707;
+}
+
+a {
+    color: #fb9004;
+}
+
+.btn-primary {
+    background-color: #acf18f;
+    color: #FFFFFF;
+    border-color: #DC143C;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.actions i {
+    font-family: FontAwesome;
+}
+
+.actions > * {
+    margin-right: 0.5rem;
+}
+
+.actions > *:last-child {
+    margin-right: 0;
+}

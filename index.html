@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГидМосква</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img class="bi me-2" width="32" height="32" src="images/Logo.png" alt="Логотип">
+                    <span class="fs-4">ГидМосква</span>
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#home" class="nav-link px-2 link-secondary">Главная</a></li>
+                    <li><a href="#features" class="nav-link px-2 link-dark">Достоинства</a></li>
+                    <li><a href="#maps" class="nav-link px-2 link-dark">Карта</a></li>
+                    <li><a href="#routes" class="nav-link px-2 link-dark">Маршрут</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <a href="account.html" class="btn btn-outline-primary me-2">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container col-xxl-8 px-4 py-5" id="home">
+            <div class="alerts my-3">
+                <div id="alerts-template" class="alert alert-dismissible fade show d-none" role="alert">
+                    <span class="msg">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <img src="images/Main.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                        height="500">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Исследуйте Москву вашим путем!</h1>
+                    <p class="lead">На МосПрогулке вы найдете множество пешеходных маршрутов, каждый из которых
+                        раскрывает
+                        уникальную историю и культуру нашего великолепного города. От древних улиц до современных
+                        достопримечательностей, наши маршруты подарят вам незабываемые впечатления.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 py-5" id="features">
+            <h2 class="pb-2 border-bottom text-center">Достоинства</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 576 512">
+                            <path
+                                d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                        </svg>
+                    </div>
+                    <h2>Индивидуальные Маршруты</h2>
+                    <p>Создавайте уникальные пешеходные маршруты по Москве, подходящие именно вам, с возможностью выбора
+                        исторических и культурных достопримечательностей.</p>
+                </div>
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 448 512">
+                            <path
+                                d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z" />
+                        </svg>
+                    </div>
+                    <h2>Профессиональные Гиды</h2>
+                    <p>Работаем только с лучшими, опытными и знающими гидами, которые покажут вам неповторимую Москву и
+                        раскроют её секреты.</p>
+                </div>
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 448 512">
+                            <path
+                                d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z" />
+                        </svg>
+                    </div>
+                    <h2>Лёгкое Бронирование</h2>
+                    <p>Быстро и удобно оформляйте заявки на экскурсии прямо через сайт, экономя ваше время и усилия.</p>
+                </div>
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 448 512">
+                            <path
+                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                        </svg>
+                    </div>
+                    <h2>Личный Кабинет</h2>
+                    <p>Управляйте своими заявками и планируйте свои маршруты, используя личный кабинет с интуитивно
+                        понятным
+                        интерфейсом.</p>
+                </div>
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 512 512">
+                            <path
+                                d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c53 0 96 43 96 96s-43 96-96 96H139.6c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-53 0-96-43-96-96s43-96 96-96h39.8c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                        </svg>
+                    </div>
+                    <h2>Эксклюзивные Маршруты</h2>
+                    <p>Откройте для себя эксклюзивные маршруты, доступные только через МосПрогулка, и погрузитесь в
+                        уникальную атмосферу города.</p>
+                </div>
+                <div class="feature col text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 512 512">
+                            <path
+                                d="M256 48C141.1 48 48 141.1 48 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V256C0 114.6 114.6 0 256 0S512 114.6 512 256V400.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24H240c-26.5 0-48-21.5-48-48s21.5-48 48-48h32c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40V256c0-114.9-93.1-208-208-208zM144 208h16c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H144c-35.3 0-64-28.7-64-64V272c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64v48c0 35.3-28.7 64-64 64H352c-17.7 0-32-14.3-32-32V240c0-17.7 14.3-32 32-32h16z" />
+                        </svg>
+                    </div>
+                    <h2>Поддержка Клиентов</h2>
+                    <p>Наша команда всегда на связи, чтобы помочь вам в любых вопросах, связанных с вашими пешеходными
+                        турами по Москве.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="maps">
+            <h2 class="pb-2 border-bottom text-center">Откуда вы хотите начать путешествие</h2>
+            <form class="row g-3 mb-3">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="address" placeholder="Введите адрес">
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary" type="button" id="yandexSearch">Найти</button>
+                </div>
+            </form>
+            <div id="map"></div>
+        </div>
+
+        <div class="container pt-5" id="routes">
+            <h2 class="pb-2 border-bottom text-center">Список пешеходных маршрутов</h2>
+
+            <form class="row g-3">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="search" placeholder="Поиск по названию">
+                </div>
+                <div class="col-6">
+                    <select class="form-control">
+                        <option value="notselected">Не выбрано</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="table-responsive">
+                <table class="table table-bordered mt-4 text-center">
+                    <thead>
+                        <tr class="table-light">
+                            <th>Название маршрута</th>
+                            <th>Описание</th>
+                            <th>Основные объекты</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="routesTableBody">
+                        <tr>
+                            <td>Маршрут 1</td>
+                            <td>Описание маршрута 1</td>
+                            <td>Объекты 1</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td>Маршрут 2</td>
+                            <td>Описание маршрута 2</td>
+                            <td>Объекты 2</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td>Маршрут 3</td>
+                            <td>Описание маршрута 3</td>
+                            <td>Объекты 3</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td>Маршрут 4</td>
+                            <td>Описание маршрута 4</td>
+                            <td>Объекты 4</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link">Назад</a></li>
+                    <li class="page-item"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item"><a class="page-link">Далее</a></li>
+                </ul>
+            </nav>
+            <div class="row gap-2 justify-content-center">
+                <button type="button" id="firstPageButton" class="btn btn-primary col-xs-2 col-sm-2">Первая
+                    страница</button>
+                <button type="button" id="lastPageButton" class="btn btn-primary col-xs-2 col-sm-2">Последняя
+                    страница</button>
+            </div>
+
+        </div>
+
+        <div class="container pt-5 d-none" id="giudesTable">
+            <h2 class="pb-2 border-bottom text-center" id="guideRouteName">Доступные гиды по маршруту: (Наименование)
+            </h2>
+
+            <form>
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-lg-auto">
+                        <label for="languageSelector" class="col-form-label">Выберете язык:</label>
+                    </div>
+                    <div class="col-12 col-lg-auto">
+                        <select class="form-select" id="languageSelector">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-auto">
+                        <label for="experienceFrom" class="col-form-label">Опыт работы:</label>
+                    </div>
+                    <div class="col-12 col-lg-auto">
+                        <input type="text" class="form-control" id="experienceFrom" name="experienceFrom"
+                            placeholder="От">
+                    </div>
+                    <div class="col-12 col-lg-auto">
+                        <input type="text" class="form-control" id="experienceTo" name="experienceTo" placeholder="До">
+                    </div>
+                </div>
+            </form>
+
+            <div class="table-responsive">
+                <table class="table table-bordered mt-4 text-center">
+                    <thead>
+                        <tr class="table-light">
+                            <th></th>
+                            <th>ФИО</th>
+                            <th>Языки</th>
+                            <th>Опыт работы (лет)</th>
+                            <th>Стоимость услуг</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="guidesTableBody">
+                        <tr>
+                            <td><img width="32" height="32" src="images/ava.jpg"></td>
+                            <td>ФИО</td>
+                            <td>русский</td>
+                            <td>3 года</td>
+                            <td>Стоимость/час</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td><img width="32" height="32" src="images/ava.jpg"></td>
+                            <td>ФИО</td>
+                            <td>русский</td>
+                            <td>3 года</td>
+                            <td>Стоимость/час</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td><img width="32" height="32" src="images/ava.jpg"></td>
+                            <td>ФИО</td>
+                            <td>русский</td>
+                            <td>3 года</td>
+                            <td>Стоимость/час</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                        <tr>
+                            <td><img width="32" height="32" src="images/ava.jpg"></td>
+                            <td>ФИО</td>
+                            <td>русский</td>
+                            <td>3 года</td>
+                            <td>Стоимость/час</td>
+                            <td><button class="btn btn-primary">Выбрать</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row justify-content-center d-none" id="makeReserveBlock">
+                <button type="button" id="makeReserve" class="btn btn-primary col-2">Оформить заявку</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-body-tertiary">
+        <p class="text-body-secondary text-center mb-0">Савинов Дамир Ильич</p>
+    </footer>
+
+    <div class="modal fade" id="modalWindow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalWindowName" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-2" id="modalWindowName">Оформление заявки</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5" id="payForm">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="d-flex">
+                                <span class="fs-6 me-2">ФИО гида:</span>
+                                <p class="fw-bold select-js-fio">Загрузка</p>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="d-flex">
+                                <span class="fs-6 me-2">Название маршрута:</span>
+                                <p class="fw-bold select-js-route">Загрузка</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-4">
+                                <label for="date" class="form-label">Дата экскурсии:</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <label for="time" class="form-label">Время начала:</label>
+                                <input type="time" class="form-control" id="time" required>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <label class="form-label">Длительность экскурсии:</label>
+                                <select class="form-select" id="duration">
+                                    <option value="1" selected>1 час</option>
+                                    <option value="2">2 часа</option>
+                                    <option value="3">3 часа</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="peopleInGroup" class="form-label">Количество человек:</label>
+                                <input type="number" class="form-control w-25" id="peopleInGroup" required value="1">
+                            </div>
+                        </div>
+                        <h3 class="fs-6 mb-3">Дополнительные опции</h3>
+                        <div class="row mb-5">
+                            <div class="col-12 col-sm-6">
+                                <input class="form-check-input" type="checkbox" value="" id="checkEat">
+                                <label class="form-check-label" for="checkEat">
+                                    Еда
+                                </label>
+                                <p class="fs-6">Легкие закуски и горячие напитки во время экскурсии.</p>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input class="form-check-input" type="checkbox" value="" id="checkRoute">
+                                <label class="form-check-label" for="checkRoute">
+                                    Интерактивный путеводитель.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h2>Итоговая стоимость: <span class="badge text-bg-success final-js-price">1000
+                                </span> рублей</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
